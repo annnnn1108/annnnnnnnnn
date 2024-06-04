@@ -80,12 +80,12 @@ function drawSkeleton() {
       text("412730425陳沛安",partA.x-width,partA.y-100)
      pop()
         if (partA.score > 0.1) {
-      image(carImg, partC.x+frameCount%width, partC.y, 50, 50);
+      image(carImg,(partC.x + frameCount) % width, partC.y, 50, 50);
     }
 
     // Draw the GIF at the right wrist if the score is higher than 0.1
     if (partB.score > 0.1) {
-      image(carImg, partD.x+frameCount%width, partD.y, 50, 50);
+      image(carImg,(partC.x + frameCount) % width, partD.y, 50, 50);
     }
     }
         }
